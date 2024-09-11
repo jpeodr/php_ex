@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Dados</title>
+</head>
+<body>
+    <h1 id="tituloprincipal">Envie suas informações</h1>
+    <form class="formulario" action="processa.php" method="post" enctype="multipart/form-data">
+        <label for="text1">Texto 1:</label>
+        <input type="text" id="text1" name="text1" required>
+        <label for="text2">Texto 2:</label>
+        <input type="text" id="text2" name="text2" required>
+        <label for="text3">Texto 3:</label>
+        <input type="text" id="text3" name="text3" required>
+
+        <label for="image1">Imagem 1:</label>
+        <input type="file" id="image1" name="image1" accept="image/*" required>
+        <label for="image2">Imagem 2:</label>
+        <input type="file" id="image2" name="image2" accept="image/*" required>
+
+        <label for="checkbox1">Checkbox 1:</label>
+        <input type="checkbox" id="checkbox1" name="checkbox1">
+        <label for="checkbox2">Checkbox 2:</label>
+        <input type="checkbox" id="checkbox2" name="checkbox2">
+
+        <label for="textarea">Texto:</label>
+        <textarea name="textarea" id="textarea" required></textarea>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
